@@ -20,6 +20,13 @@ namespace FindTest.Tests
       string result = Find.Replace("aaa", "aaa", "ccc");
       Assert.AreEqual("ccc", result);
     }
+
+    [TestMethod]
+    public void Replace_ReturnsReplaceWithInArray_String()
+    {
+      string result = Find.Replace("aaa bbb", "aaa", "ccc");
+      Assert.AreEqual("ccc bbb",result);
+    }
     // Test methods will go here.
 
   }
