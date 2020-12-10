@@ -24,8 +24,8 @@ namespace FindTest.Tests
     [TestMethod]
     public void Replace_ReturnsReplaceWithInArray_String()
     {
-      string result = Find.Replace("aaa bbb", "aaa", "ccc");
-      Assert.AreEqual("ccc bbb",result);
+      string result = Find.Replace("aaabbb", "aaa", "ccc");
+      Assert.AreEqual("cccbbb", result);
     }
     // Test methods will go here.
 
