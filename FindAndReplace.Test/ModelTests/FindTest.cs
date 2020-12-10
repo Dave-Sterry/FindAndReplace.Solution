@@ -8,10 +8,10 @@ namespace FindTest.Tests
   {
     
     [TestMethod]
-    public void Replace_ReplaceExactMatch_String()
+    public void Replace_ReturnUserPhraseIfNoMatch_String()
     {
-      string result = Find.Replace("ab", "bc", "cd");
-      Assert.AreEqual("false", result);
+      string result = Find.Replace("aaa", "bbb", "ccc");
+      Assert.AreEqual("bbb", result);
     }
     // Test methods will go here.
 
